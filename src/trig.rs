@@ -11,6 +11,18 @@ mod trig {
         sin(x)/cos(x)
     }
 
+    pub fn sec(x: f64) -> f64 {
+        1/cos(x)
+    }
+
+    pub fn csc(x: f64) -> f64 {
+        1/sin(x)
+    }
+
+    pub fn cot(x: f64) -> f64 {
+        cos(x)/sin(x)
+    }
+
     fn sinos(x: f64, f: char) -> f64 {
         let atol: f64 = 1e-12;
         let mut diff: f64 = 1.0;
@@ -58,9 +70,5 @@ mod trig {
             2 | 3 => -1,
             _ => 1
         }
-    }
-
-    fn cos_conv(x: f64) -> f64 {
-
     }
 }

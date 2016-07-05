@@ -4,7 +4,12 @@ mod trig;
 mod tests {
     use trig;
     #[test]
-    fn it_works() {
+    fn test_sin() {
         assert!(trig::sin(0.0) == 0.0);
+    }
+
+    #[test]
+    fn test_cos() {
+        assert!(trig::cos(0.0) == 1.0);
     }
 }

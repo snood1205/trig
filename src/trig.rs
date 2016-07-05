@@ -1,22 +1,13 @@
-// pub fn sin(x: f64) -> f64 {
-//     let atol: f64 = 1e-12;
-//     let mut diff: f64 = 1.0;
-//     let mut sin: f64 = 0.0;
-//     let mut i: u8 = 1;
-//     while abs(diff) > atol {
-//         diff = (sin_neg(i) as f64) * pow(x,i) / (fact(i) as f64);
-//         sin += diff;
-//         i += 2;
-//     }
-//     sin
-// }
-
 pub fn sin(x: f64) -> f64 {
     sinos(x, 's')
 }
 
 pub fn cos(x: f64) -> f64 {
     sinos(x, 'c')
+}
+
+pub fn tan(x: f64) -> f64 {
+    sin(x)/cos(x)
 }
 
 fn sinos(x: f64, f: char) -> f64 {

@@ -1,4 +1,4 @@
-fn sin(x: f64) -> f64 {
+pub fn sin(x: f64) -> f64 {
     let atol: f64 = 1e-12;
     let mut diff: f64 = 1.0;
     let mut sin: f64 = 0.0;
